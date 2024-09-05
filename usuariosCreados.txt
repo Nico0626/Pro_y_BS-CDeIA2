@@ -1,0 +1,10 @@
+{
+    "Nico1234": {
+        "nombre": "nico",
+        "apellido": "menon",
+        "dni": "46129760",
+        "correo": "nico.enon.2@gmail.com",
+        "fecha_nacimiento": "13/12/2004",
+        "password": "Nico1234"
+    }
+}
