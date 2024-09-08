@@ -13,10 +13,10 @@ def multiplicar (numero1,numero2):
     return round(float(resultado),2)
 
 def dividir(numero1,numero2):
-    if numero2==0:
+    """if numero2==0:
         raise ValueError("No se puede dividir un numero entre 0")
-    else:
-        resultado=(numero1/numero2)
+    else:"""
+    resultado=(numero1/numero2)
     return round(float(resultado),2)
 
 def sumar_n(*numeros):
