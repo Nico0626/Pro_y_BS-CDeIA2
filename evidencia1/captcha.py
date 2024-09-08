@@ -2,13 +2,13 @@ import random
 from aritmetica_carpeta import aritmetica
 
 def generar_operacion():
-    """Genera una operación aritmética aleatoria y devuelve los operandos y la operación."""
+    #Genera una operación aritmética aleatoria y devuelve los operandos y la operación
     operaciones = ['/']
     operacion = random.choice(operaciones)
     numero1 = round(random.uniform(-100, 100), 2)
     numero2 = round(random.uniform(-100, 100), 2)
 
-    # Asegúrate de que no haya división por cero
+    # Evita la división por cero
     if operacion == '/':
         while numero2 == 0:
             numero2 = round(random.uniform(-100, 100), 2)
@@ -16,7 +16,7 @@ def generar_operacion():
     return numero1, numero2, operacion
 
 def calcular_resultado(numero1, numero2, operacion):
-    """Calcula el resultado de la operación aritmética."""
+    #Calcula el resultado de la operación aritmética
     if operacion == '+':
         return aritmetica.sumar(numero1, numero2)
     elif operacion == '-':
@@ -27,7 +27,7 @@ def calcular_resultado(numero1, numero2, operacion):
         return aritmetica.dividir(numero1, numero2)
 
 def resolver_captcha():
-    """Genera un captcha y valida la respuesta del usuario."""
+    #Genera un captcha y valida la respuesta del usuario
     while True:
         numero1, numero2, operacion = generar_operacion()
         resultado_correcto = calcular_resultado(numero1, numero2, operacion)
